@@ -10,7 +10,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 00vh;
   font-family: open sans;
   color: #10214e;
 }
@@ -22,11 +22,12 @@ article {
   align-items: center;
   justify-content: flex-end;
   width: 50vw;
+  height: 30em;
   max-width: 25em;
   min-width: 20em;
   border-radius: 1rem;
   background: rgb(0,239,255);
-  background: linear-gradient(0deg, rgba(0,239,255,1) 40%, #4e54c8 100%);
+  background: linear-gradient(0deg, rgba(0,239,255,1) 40%, white 100%);
   box-shadow: 0 0 20px 20px rgba(0,0,0,.1);
   transition: .25s;
 }
@@ -161,7 +162,7 @@ body {
 
 .content h1 {
   color: #fff;
-  font-size: 5em;
+  font-size: 2em;
   position: absolute;
   transform: translate(-50%, -50%);
 }
