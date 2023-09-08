@@ -4,6 +4,8 @@
   padding: 0;
 }
 
+/* hier staat de positie, afmetingen en kleur van de FlipCard*/
+
 .flip-card {
   background-color: transparent;
   width: 350px;
@@ -15,6 +17,8 @@
 
 }
 
+/* dit is de binnenkant van de flipcard, met 100% w en h zodat het goed blijft werken. En de transition en transform zodat de kaart kan draaien*/
+
 .flip-card-inner{
   position: relative;
   width: 100%;
@@ -24,9 +28,14 @@
   transform-style: preserve-3d;
 }
 
+/* Dit zorgt ervoor dat de kaart draait als je er over heen gaat met de cursor*/
+
 .flip-card:hover .flip-card-inner{
   transform:rotateY(180deg) ;
 }
+
+
+/* Dit zorgt ervoor dat de kaarten 2 sides zijn, en dat de front niet spiegelt*/
 
 .flip-card-front, .flip-card-back {
   position: absolute;
@@ -36,10 +45,13 @@
   align-content: center;
 }
 
+/* was de kleur van de voorkant totdat ik er een plaatje in zette*/
 .flip-card-front{
   background-color: gray;
   color: black;
 }
+
+/* kleur en letters op de achterkant van de kaart*/
 
 .flip-card-back {
   padding: 1em;
@@ -51,7 +63,7 @@
   text-align: left;
   
 }
-
+/* de kleur, grootte en transition van mijn social buttons*/
 .social-icon {
   color: #7cdeff;
   transition: color 0.2s;
@@ -60,15 +72,19 @@
   padding: 2px;
 }
 
+/* als je over de social buttons gaat hoveren zullen deze blauw zijn*/
+
 .social-icon:hover{
   color: blue;
 }
+
+/*dit zorgt ervoor dat de icons in de kaart terecht komen*/
 
 .icons{
 display: flex;
 align-content: space-between;
 padding-bottom: 1rem;
-align-items: bottom;
+align-content: bottom;
 
 
 }
